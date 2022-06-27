@@ -12,35 +12,24 @@ vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
 
 indent_blankline.setup {
-    show_current_context = true,
-    show_current_context_start = true,
-    char = "▏",
-    show_trailing_blankline_indent = false,
-    show_first_indent_level = false,
-    use_treesitter = true,
-    buftype_exclude = { "terminal", "nofile" },
-    filetype_exclude = {
-        "help",
-        "packer",
-        "NvimTree",
-    },
-    char_highlight_list = {
-        "IndentBlanklineIndent2",
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent3",
-        "IndentBlanklineIndent4",
-        "IndentBlanklineIndent5",
-        "IndentBlanklineIndent6",
-    },
+  show_current_context = true,
+  show_current_context_start = true,
   char = "▏",
   show_trailing_blankline_indent = false,
-  show_first_indent_level = true,
+  show_first_indent_level = false,
   use_treesitter = true,
-  show_current_context = true,
   buftype_exclude = { "terminal", "nofile" },
   filetype_exclude = {
     "help",
     "packer",
     "NvimTree",
+  },
+  char_highlight_list = {
+    "IndentBlanklineIndent2",
+    "IndentBlanklineIndent1",
+    "IndentBlanklineIndent3",
+    "IndentBlanklineIndent4",
+    "IndentBlanklineIndent5",
+    "IndentBlanklineIndent6",
   },
 }
