@@ -43,3 +43,8 @@ luac.out
 plugin/packer_compiled.lua
 java-debug/
 vscode-java-test/
+
+# node
+node_modules/
+package.json
+package-lock.json
