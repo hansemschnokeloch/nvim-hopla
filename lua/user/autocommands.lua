@@ -45,6 +45,9 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   end,
 })
 
+-- Auto formatting
+vim.cmd [[autocmd BufWritePre *.php :lua vim.lsp.buf.formatting_sync()]]
+
 -- Lua indentation
 vim.cmd "autocmd FileType lua :set ts=2 | set sts=2 | set sw=2"
 

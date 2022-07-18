@@ -20,5 +20,10 @@ null_ls.setup {
     formatting.stylua,
     -- formatting.google_java_format,
     diagnostics.flake8,
+    -- diagnostics.phpstan.with {
+    --   generator_opts.with {
+    --     command = "php vendor/bin/phpstan",
+    --   }
+    -- },
   },
 }
