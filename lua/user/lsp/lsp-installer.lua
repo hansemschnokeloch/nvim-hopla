@@ -14,6 +14,7 @@ local servers = {
   "yamlls",
   "intelephense",
   "tailwindcss",
+  "rnix",
 }
 
 lsp_installer.setup()
